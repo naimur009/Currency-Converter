@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <style>
+
+        body{
+            background-color: #EFEBEB;
+        }
+        .main{
+            /* height: 80vh; */
+            width: 450px;
+            background-color: white;
+            padding: 10px 30px;
+            margin: auto;
+        }
+
+        h1{
+            text-align: center;
+            color: #0162D5;
+        }
+        form{
+            width: 100%;
+        }
+
+        form p{
+            font-size: 25px;
+        }
+        form select{
+            width: 95%;
+            height: 50px;
+            background-color:#EFEBEB ;
+            border: none;
+            border-radius: 10px;
+            padding: 0px 20px;
+            font-size: 20px;
+            color: gray;
+        }
+
+        .amount input{
+            width:calc(95% - 10px);
+            height: 50px;
+            background-color:#EFEBEB ;
+            border: none;
+            border-radius: 10px;
+            padding-left: 10px;
+            font-size: 20px;
+        }
+
+        button{
+            padding: 10px 30px;
+            background-color:#00D998 ;
+            color: white;
+            font-size: 30px;
+            font-weight:900;
+            border: 2px solid #00D998;
+            width: 95%;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+
+        button:hover{
+            cursor: pointer;
+        }
+
+        .converted_amount{
+            width: 95%;
+            height: 50px;
+            background-color:#EFEBEB ;
+            border: none;
+            border-radius: 10px;
+            padding-left: 10px;
+            font-size: 25px;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            color:gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;       
+        }
+
+    
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+
+        <h1>Currency converter</h1>
+
+        <form>
+            <div class="form">
+                <p>From</p>
+                <div class="select_container">
+                    <select name="from">
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="to">
+                <p>To</p>
+                <div class="select_container">
+                    <select name="to">
+                    </select>
+                </div>
+            </div>
+
+            <div class="amount">
+                <p>Amount</p>
+                <input type="text" value="1">
+            </div>
+
+            <button>Convert</button>
+        </form>
+
+        <div class="converted_amount">
+            Converted Amount
+        </div>
+
+
+
+    </div>
+
+    <script src="code.js"></script>
+    <script src="first.js"></script>
+</body>
+</html>
